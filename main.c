@@ -1,8 +1,4 @@
 #include <stdio.h>
-
-int main() {
-  #include <stdio.h>
-
 int main(void) {
     int t;
     scanf("%d", &t);
@@ -15,13 +11,6 @@ int main(void) {
         printf("NONG\n");
     } else {
         printf("RAT_NONG\n");
-    }
-
-    return 0;
-}
-
-
-
-  
+    }  
   return 0;
 }
