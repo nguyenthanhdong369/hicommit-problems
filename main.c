@@ -4,7 +4,7 @@ int main() {
 
   int khoangcach, order_value;
 
-  scanf("%d %d", &khoangcach, &order_);
+  scanf("%d %d", &khoangcach, &order_value);
 
 
   if (khoangcach<=0 || order_value<=0) printf(" INVALID ");
