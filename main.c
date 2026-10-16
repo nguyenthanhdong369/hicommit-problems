@@ -4,11 +4,8 @@ int main() {
 
   int khoangcach, order_value;
 
-  printf("nhap khoang cach(km):\t ");
-  scanf("%d", &khoangcach);
+  scanf("%d %d", &khoangcach, &order_);
 
-  printf("nhap gia hoa don:");
-  scanf("%d", &order_value);
 
   if (khoangcach<=0 || order_value<=0) printf(" INVALID ");
   else if(order_value>=500000 && khoangcach<=15) printf("ban duoc mien phi");
