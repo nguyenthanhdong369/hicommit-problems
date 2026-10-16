@@ -1,22 +1,15 @@
 #include <stdio.h>
 
 int main() {
+    int a, b, c, max;
+    printf("nhap a, b, c lan luot la: ");
+    scanf("%d %d %d",&a,&b, &c);
 
-   #include <stdio.h>
-
-int main() {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-
-    int max = a;
-    if (b > max) max = b;
-    if (c > max) max = c;
+    max=a;
+    if(b>max) max=b;
+    if(c>max) max=c;
 
     printf("%d", max);
-    return 0;
-}
-
-
 
   
   return 0;
