@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-  float w, h, BMI;
+  float w, h;
   scanf("%f %f",&w,&h);
-  BMI = w/(h/100)^2;
+  float BMI = w/(h/100)^2;
   if(BMI<18.5) printf("UNDERWEIGHT");
-  else if(18.5 ≤ BMI < 25) printf("NORMAL");
-  else if(25 ≤ BMI < 30) printf("OVERWEIGHT");
-  else if(BMI ≥ 30) printf("OBESE");
+  else if(BMI < 25) printf("NORMAL");
+  else if(BMI < 30) printf("OVERWEIGHT");
+  else  printf("OBESE");
   return 0;
 }
