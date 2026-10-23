@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    double drl, dtb;
-    if (scanf("%lf %lf", &drl, &dtb) != 2) return 0;
+    double dtb, drl; // Sửa lại: Nhập dtb trước, drl sau cho đúng thứ tự đề bài
+    if (scanf("%lf %lf", &dtb, &drl) != 2) return 0;
     
     int hl = 1, rl = 1;
     if (dtb >= 9.0)       hl = 4; 
