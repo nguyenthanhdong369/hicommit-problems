@@ -27,6 +27,15 @@ int main() {
             k = k - 100;
         }
     }
+      if (k > 0) {
+        if (k <= 100) {
+            tong_tien = tong_tien + k * 2536;
+            k = 0;
+        } else {
+            tong_tien = tong_tien + 100 * 2536;
+            k = k - 100;
+        }
+    }
     }  
     printf("%lld\n", tong_tien);
     }
