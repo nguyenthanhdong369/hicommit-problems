@@ -3,8 +3,8 @@
 int main() {
    double dtb;
    scanf("%f",&dtb);
-    if(dtb <4.0) printf("F");
-    else if(4.0<=dtb<4.9) printf("D");
+    if(dtb>=9.0) printf("A");
+    else if(9.0<dtb) printf("B+");
   
   return 0;
 }
