@@ -1,56 +1,47 @@
 #include <stdio.h>
 
 int main() {
- long long k;
-    scanf("%lld", &k);
-    long long tong_tien = 0; 
+    long long k;
+    if (scanf("%lld", &k) != 1) return 0;
+
+    long long tong_tien = 0;
+
     if (k <= 50) {
         tong_tien = k * 1678;
-        k = 0; 
-    } else {
+    } 
+    else {
         tong_tien = 50 * 1678;
-        k = k - 50; 
-    if (k > 0) {
-        if (k <= 50) {
-            tong_tien = tong_tien + k * 1734;
-            k = 0;
-        } else {
+        
+        if (k <= 100) {
+            tong_tien = tong_tien + (k - 50) * 1734;
+        } 
+        else {
             tong_tien = tong_tien + 50 * 1734;
-            k = k - 50;
+            
+            if (k <= 200) {
+                tong_tien = tong_tien + (k - 100) * 2014;
+            } 
+            else {
+                tong_tien = tong_tien + 100 * 2014;
+                
+                if (k <= 300) {
+                    tong_tien = tong_tien + (k - 200) * 2536;
+                } 
+                else {
+                    tong_tien = tong_tien + 100 * 2536;
+                    
+                    if (k <= 400) {
+                        tong_tien = tong_tien + (k - 300) * 2834;
+                    } 
+                    else {
+                        tong_tien = tong_tien + 100 * 2834 + (k - 400) * 2927;
+                    }
+                }
+            }
         }
-      if (k > 0) {
-        if (k <= 100) {
-            tong_tien = tong_tien + k * 2014;
-            k = 0;
-        } else {
-            tong_tien = tong_tien + 100 * 2014;
-            k = k - 100;
-        }
-    }
-      if (k > 0) {
-        if (k <= 100) {
-            tong_tien = tong_tien + k * 2536;
-            k = 0;
-        } else {
-            tong_tien = tong_tien + 100 * 2536;
-            k = k - 100;
-        }
-    }
-      if (k > 0) {
-        if (k <= 100) {
-            tong_tien = tong_tien + k * 2834;
-            k = 0;
-        } else {
-            tong_tien = tong_tien + 100 * 2834;
-            k = k - 100;
-        }
-    }
-      if (k > 0) {
-        tong_tien = tong_tien + k * 2927;
-    }
-    }  
-    printf("%lld\n", tong_tien);
     }
 
-  return 0;
+    printf("%lld\n", tong_tien);
+
+    return 0;
 }
