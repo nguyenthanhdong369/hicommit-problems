@@ -9,6 +9,6 @@ int main() {
      t=1*15000 + (d-1)*13000;}
    else{
      t=1*15000 + 4*13000 + (d-1)*11000;}
-   printf("%ld",(longint)t)
+   printf("%ld",(longint)t);
   return 0;
 }
