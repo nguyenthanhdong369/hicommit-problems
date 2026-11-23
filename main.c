@@ -22,6 +22,7 @@ int main() {
           else
             printf("VALID");
        }
+  }
    else{
        if(d==31){
           if(m==1 || m==3 || m==5 || m==7 || m==10 || m==12)
