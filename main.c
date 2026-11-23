@@ -36,7 +36,7 @@ int main() {
           else
             printf("INVALID");
        }
-        if( d>=1 && d<=29)){
+        if( d>=1 && d<=28){
           if(m==2)
             printf("VALID");
           else
